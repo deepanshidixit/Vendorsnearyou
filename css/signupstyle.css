@@ -3,7 +3,7 @@ body {
   background-color: rgb(245, 240, 240); }
 
 p {
-  color: #b3b3b3;
+  color: #f8f6f6;
   font-weight: 300; }
 
 h1, h2, h3, h4, h5, h6,
@@ -32,7 +32,7 @@ h2 {
     height: 200px; } }
 
 .half .contents {
-  background: #f6f7fc; }
+  background: #f5f5f8; }
 
 .half .contents {
   width: 80%; }
@@ -50,7 +50,7 @@ h2 {
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   height: 54px;
-  background: #fff; }
+  background: rgb(227, 240, 230); }
   .half .contents .form-control:active, .half .contents .form-control:focus, .half .bg .form-control:active, .half .bg .form-control:focus {
     outline: none;
     -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
@@ -61,13 +61,14 @@ h2 {
   background-position: center; }
 
 .half a {
-  color: #888;
+  color: rgb(87, 82, 82);
   text-decoration: underline; }
 
 .half .btn {
   height: 54px;
   padding-left: 30px;
-  padding-right: 30px; }
+  padding-right: 30px;
+  background-color:#f79c48 }
 
 .half .forgot-pass {
   position: relative;

@@ -32,7 +32,7 @@ h2 {
     height: 200px; } }
 
 .half .contents {
-  background: #f6f7fc; }
+  background: #f8f7f6; }
 
 .half .contents, .half .bg {
   width: 50%; }
@@ -45,7 +45,7 @@ h2 {
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     height: 54px;
-    background: #fff; }
+    background: rgb(227, 240, 230); }
     .half .contents .form-control:active, .half .contents .form-control:focus, .half .bg .form-control:active, .half .bg .form-control:focus {
       outline: none;
       -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
@@ -62,7 +62,8 @@ h2 {
 .half .btn {
   height: 54px;
   padding-left: 30px;
-  padding-right: 30px; }
+  padding-right: 30px;
+  background-color:#f79c48 }
 
 .half .forgot-pass {
   position: relative;
@@ -140,5 +141,5 @@ h2 {
   border-color: #7b7b7b; }
 
 .control--checkbox input:disabled:checked ~ .control__indicator {
-  background-color: #7e0cf5;
+  background-color: #eca059;
   opacity: .2; }
