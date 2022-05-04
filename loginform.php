@@ -22,7 +22,7 @@
   
 
   <div class="d-lg-flex half">
-    <div class="bg order-1 order-md-2" style="background-image: url('C:/xampp/htdocs/Vendorsnearyou/assets/images/huzeyfe-turan-IhgdJavmiXQ-unsplash.jpg');"></div>
+    <div class="bg order-1 order-md-2" style="background-image: url('assets/images/loginimage.jpg');"></div>
     <div class="contents order-2 order-md-1">
 
       <div class="container">
@@ -30,14 +30,14 @@
           <div class="col-md-7">
             <h3>Login</h3>
             <p class="mb-4">Enter Your Username and Password</p>
-            <form action="#" method="post">
+            <form action="loginvalid.php" method="post">
               <div class="form-group first">
                 <label for="username">Username</label>
-                <input type="text" class="form-control" placeholder="your-email@gmail.com" id="username">
+                <input type="text" class="form-control" name="username" placeholder="your-email@gmail.com" id="username">
               </div>
               <div class="form-group last mb-3">
                 <label for="password">Password</label>
-                <input type="password" class="form-control" placeholder="Your Password" id="password">
+                <input type="password" class="form-control" name="password" placeholder="Your Password" id="password">
               </div>
               
               <div class="d-flex mb-5 align-items-center">
