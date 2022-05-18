@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome.css">
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -49,7 +49,15 @@
                             <li><a href="index.php" class="active">Home</a></li>
                             <li><a href="">Products</a></li>
                             <li><a href="">Checkout</a></li>
-                            <li><a href="loginform.php">Login</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Login</a>
+                              
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="loginform.php">Customer Login</a>
+                                    <a class="dropdown-item" href="">Seller Login</a>
+                                    
+                                </div>
+                            
 
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>

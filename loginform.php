@@ -15,19 +15,69 @@
     
     <!-- Style -->
     <link rel="stylesheet" href="loginformstyle.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-awesome.css">
 
     <title>Login #2</title>
+    
   </head>
   <body>
+  <header class="header-area header-sticky" style="height: 6.5rem ;">
+        <div class="container" >
+            <div class="row" >
+                <div class="col-12" >
+                    <nav class="main-nav" >
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.php" class="logo"><img src ="assets/images/logonew.svg" style="height:9rem; width:9rem; margin-top:-1.5rem; margin-left:-5.2rem;"><span style="padding-left:-2rem;font-size:2rem; color:black;">Gro-Fresh</span><em> </em></a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav" style="padding-top:1.3rem;">
+                            <li><a href="index.php" style="color:black;">Home</a></li>
+                            <li><a href="" style="color:black;">Products</a></li>
+                            <li><a href="" style="color:black;">Checkout</a></li>
+                            
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Login</a>
+                              
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="loginform.php">Customer Login</a>
+                                    <a class="dropdown-item" href="">Seller Login</a>
+                                    
+                                </div>
+                            
+
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+                              
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="about.php" style="color:black">About Us</a>
+                                    
+                                </div>
+                            </li>
+                            <li><a href="" style="color:black;">Contact</a></li> 
+                        </ul>        
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    
+    
+    
   
 
-  <div class="d-lg-flex half">
-    <div class="bg order-1 order-md-2" style="background-image: url('assets/images/loginimage.jpg');"></div>
+  <div class="d-lg-flex half" style="height:100%">
+    <div class="bg order-1 order-md-2" style="background-image: url('assets/images/gro.jpg');margin-top:-15% ;"></div>
     <div class="contents order-2 order-md-1">
 
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-md-7">
+      <div class="container" >
+        <div class="row align-items-center justify-content-center" >
+          <div class="col-md-7" style="margin-top:20%;">
             <h3>Login</h3>
             <p class="mb-4">Enter Your Username and Password</p>
             <form action="loginvalid.php" method="post">
@@ -49,7 +99,7 @@
               </div>
 
               <input type="submit" value="Log In" class="btn btn-block">
-              <p><a href="signupform.html">New User? Register here</a></p>
+              <p><a href="signupform.php">New User? Register here</a></p>
 
             </form>
           </div>
