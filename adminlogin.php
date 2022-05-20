@@ -91,8 +91,7 @@
                 <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span> 
               </div>
 
-              <input type="submit" value="Log In" class="btn btn-block">
-              <p><a href="signupform.php">New User? Register here</a></p>
+             
 
             </form>
           </div>

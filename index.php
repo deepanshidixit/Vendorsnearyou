@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome.css">
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -42,23 +42,51 @@
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
+                        
+
+                        
+
                         <a href="index.php" class="logo"><img src ="assets/images/logonew.svg" style="height:9rem; width:9rem; margin-top:-1.5rem; margin-left:-5.2rem;"><span style="padding-left:-2rem;font-size:2rem">Gro-Fresh</span><em> </em></a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav" style="padding-top:1.3rem;">
                             <li><a href="index.php" class="active">Home</a></li>
-                            <li><a href="">Products</a></li>
-                            <li><a href="">Checkout</a></li>
-                            <li><a href="loginform.php">Login</a></li>
-
                             <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
-                              
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="about.php">About Us</a>
+                                <a class="dropdown-item" href="adminlogin.php">Groceries</a>
+                                <ul class="submenu dropdown-menu">
+			<li><a class="nav-link" href="#">Submenu item 1 </a></li>
+		    <li><a class="nav-link" href="#">Submenu item 2 </a></li>
+		    <li><a class="nav-link" href="#">Submenu item 3 <b class="float-end">&raquo;</b> </a>
+		    	<ul class="submenu dropdown-menu">
+				    <li><a class="nav-link" href="#">Multi level 1</a></li>
+				    <li><a class="nav-link" href="#">Multi level 2</a></li>
+				    <li><a class="nav-link" href="#">Multi level 3</a></li>
+				</ul>
+		    </li>
+		</ul>
+                                
+                                    
+                                    <a class="dropdown-item" href="loginform.php">Fruits and Vegetables</a>
+                                    <a class="dropdown-item" href="">Dairy Products</a>
                                     
                                 </div>
-                            </li>
+                            <li><a href="">Checkout</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Login</a>
+                              
+                                <div class="dropdown-menu">
+                                <a class="dropdown-item" href="adminlogin.php">Admin Login</a>
+                                    
+                                    <a class="dropdown-item" href="loginform.php">Customer Login</a>
+                                    <a class="dropdown-item" href="">Seller Login</a>
+                                    
+                                </div>
+                            <li><a href="">About Us</a></li>
+                            
+
+                        
                             <li><a href="">Contact</a></li> 
                         </ul>        
                         <a class='menu-trigger'>
@@ -71,6 +99,7 @@
         </div>
     </header>
     <!-- ***** Header Area End ***** -->
+    
 
     <!-- ***** Main Banner Area Start ***** -->
     <div class="main-banner" id="top">
@@ -86,11 +115,16 @@
                 <div class="main-button">
                     <a href="option.php">Order now</a>
                 </div>
+                <div style="margin-top:5rem;margin-left:2rem;">
+                <input type="text" placeholder="What do yo u need?">
+                                <button type="submit" class="site-btn" style="color:white;background-color:#ed563b;">SEARCH</button>
+</div>
                 
             </div>
         </div>
     </div>
     <!-- ***** Main Banner Area End ***** -->
+    
 
    <!-- ***** Cars Starts ***** -->
     <section class="section" id="trainers">

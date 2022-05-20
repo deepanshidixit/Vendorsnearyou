@@ -1,9 +1,9 @@
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #fff; }
+  background-color: rgb(245, 240, 240); }
 
 p {
-  color: #b3b3b3;
+  color: #f8f6f6;
   font-weight: 300; }
 
 h1, h2, h3, h4, h5, h6,
@@ -25,38 +25,43 @@ h2 {
 
 .half, .half .container > .row {
   height: 100vh;
-  min-height: 700px; }
+  min-height: 900px; }
 
 @media (max-width: 991.98px) {
   .half .bg {
     height: 200px; } }
 
 .half .contents {
-  background: #f8f7f6; }
+  background: #f5f5f8; }
 
-.half .contents, .half .bg {
-  width: 50%; }
-  @media (max-width: 1199.98px) {
-    .half .contents, .half .bg {
-      width: 100%; } }
-  .half .contents .form-control, .half .bg .form-control {
-    border: none;
+.half .contents {
+  width: 80%; }
+
+.half .bg {
+  width: 20%; }
+
+@media (max-width: 991.98px) {
+  .half .contents, .half .bg {
+    width: 100%; } }
+
+.half .contents .form-control, .half .bg .form-control {
+  border: none;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  height: 54px;
+  background: rgb(227, 240, 230); }
+  .half .contents .form-control:active, .half .contents .form-control:focus, .half .bg .form-control:active, .half .bg .form-control:focus {
+    outline: none;
     -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    height: 54px;
-    background: rgb(227, 240, 230); }
-    .half .contents .form-control:active, .half .contents .form-control:focus, .half .bg .form-control:active, .half .bg .form-control:focus {
-      outline: none;
-      -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1); }
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1); }
 
 .half .bg {
   background-size: cover;
   background-position: center; }
 
 .half a {
-  color: #888;
+  color: rgb(87, 82, 82);
   text-decoration: underline; }
 
 .half .btn {
@@ -141,7 +146,5 @@ h2 {
   border-color: #7b7b7b; }
 
 .control--checkbox input:disabled:checked ~ .control__indicator {
-  background-color: #eca059;
+  background-color: #7e0cf5;
   opacity: .2; }
-
-  
