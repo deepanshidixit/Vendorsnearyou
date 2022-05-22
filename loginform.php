@@ -46,7 +46,25 @@
                                 </div>
                               <li><a href="" style="color:black">About Us</a></li>
 
+
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Login</a>
+                              
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="loginform.php">Customer Login</a>
+                                    <a class="dropdown-item" href="">Seller Login</a>
+                                    
+                                </div>
                             
+
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+                              
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="about.php" style="color:black">About Us</a>
+                                    
+                                </div>
+                            </li>
+
                             <li><a href="" style="color:black;">Contact</a></li> 
                         </ul>        
                         <a class='menu-trigger'>

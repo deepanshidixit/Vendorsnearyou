@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -43,14 +43,22 @@
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
                         
-
-                        
-
                         <a href="index.php" class="logo"><img src ="assets/images/logonew.svg" style="height:9rem; width:9rem; margin-top:-1.5rem; margin-left:-5.2rem;"><span style="padding-left:-2rem;font-size:2rem">Gro-Fresh</span><em> </em></a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav" style="padding-top:1.3rem;">
                             <li><a href="index.php" class="active">Home</a></li>
+                            <li><a href="">Products</a></li>
+                            <li><a href="">Checkout</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Login</a>
+                              
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="loginform.php">Customer Login</a>
+                                    <a class="dropdown-item" href="">Seller Login</a>
+                                    
+                                </div>
+                            
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
                                 <div class="dropdown-menu">
@@ -266,7 +274,5 @@
     
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
-    
-
   </body>
 </html>

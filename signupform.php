@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,8 +16,9 @@
     <link rel="stylesheet" href="font-awesome.css">
 
     <title>Sign Up #2</title>
-  </head>
-  <body>
+</head>
+
+<body>
   <header class="header-area header-sticky" style="height: 6.5rem ;">
         <div class="container" >
             <div class="row" >
@@ -31,6 +32,7 @@
                             <li><a href="index.php" style="color:black;">Home</a></li>
                             <li><a href="" style="color:black;">Products</a></li>
                             <li><a href="" style="color:black;">Checkout</a></li>
+
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Login</a>
                               
@@ -88,6 +90,8 @@
                   <div class="form-group first">
                     <label for="phoneno">Phone Number</label>
                     <input type="text" name="phone" class="form-control" placeholder="+00 0000 000 0000" id="phoneno">
+                    <label for="lname">Phone Number</label>
+                    <input type="text" name="phone" class="form-control" placeholder="+00 0000 000 0000" id="lname">
                   </div>    
                 </div>
               </div>
@@ -119,18 +123,12 @@
 
               <input type="submit" value="Register" class="btn px-5">
               <p><a href="loginform.php">Already registered? Back to Login</a></p>
-              
-
             </form>
           </div>
         </div>
       </div>
-    </div>
-
-    
+    </div> 
   </div>
-    
-    
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
