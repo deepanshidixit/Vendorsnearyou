@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head>
+  <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,9 +16,8 @@
     <link rel="stylesheet" href="font-awesome.css">
 
     <title>Sign Up #2</title>
-</head>
-
-<body>
+  </head>
+  <body>
   <header class="header-area header-sticky" style="height: 6.5rem ;">
         <div class="container" >
             <div class="row" >
@@ -32,16 +31,16 @@
                             <li><a href="index.php" style="color:black;">Home</a></li>
                             <li><a href="" style="color:black;">Products</a></li>
                             <li><a href="" style="color:black;">Checkout</a></li>
+                            <li><a href="loginform.php" class="active"style="color:black;">Login</a></li>
 
                             <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Login</a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color:black;">About</a>
                               
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="">Seller Register</a>
+                                    <a class="dropdown-item" href="about.php" >About Us</a>
                                     
                                 </div>
-                            <li><a href="" style="color:black">About Us</a></li>
-                            
+                            </li>
                             <li><a href="" style="color:black;">Contact</a></li> 
                         </ul>        
                         <a class='menu-trigger'>
@@ -88,8 +87,6 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group first">
-                    <label for="phoneno">Phone Number</label>
-                    <input type="text" name="phone" class="form-control" placeholder="+00 0000 000 0000" id="phoneno">
                     <label for="lname">Phone Number</label>
                     <input type="text" name="phone" class="form-control" placeholder="+00 0000 000 0000" id="lname">
                   </div>    
@@ -97,14 +94,15 @@
               </div>
                 
                 <div class="row">
-                  <div class="col-md-6"> 
+                  <div class="col-md-6">
+                
                     <div class="form-group last mb-3">
                       <label for="password">Password</label>
                       <input type="password" name="password" class="form-control" placeholder="Your Password" id="password">
                     </div>
                   </div>
-
                 <div class="col-md-6">
+              
                   <div class="form-group last mb-3">
                     <label for="re-password">Re-type Password</label>
                     <input type="password" class="form-control" placeholder="Your Password" id="re-password">
@@ -123,12 +121,18 @@
 
               <input type="submit" value="Register" class="btn px-5">
               <p><a href="loginform.php">Already registered? Back to Login</a></p>
+              
+
             </form>
           </div>
         </div>
       </div>
-    </div> 
+    </div>
+
+    
   </div>
+    
+    
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
