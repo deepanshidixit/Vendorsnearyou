@@ -17,7 +17,9 @@
 
     <title>Seller Sign Up</title>
   </head>
+
   <body>
+
   <header class="header-area header-sticky" style="height: 6.5rem ;">
         <div class="container" >
             <div class="row" >
@@ -37,7 +39,8 @@
                                 <a class="dropdown-item" href="sellerlogin.php" style="color:black;">Seller Login</a>
                                     
                                 </div>
-                            <li><a href="" style="color:black">About Us</a></li>
+                                </li>
+                                <li><a href=""style="color:black;" >About Us</a></li>
                             
                             <li><a href="" style="color:black;">Contact</a></li> 
                         </ul>        
@@ -52,13 +55,14 @@
     </header>
 
     <div class="d-lg-flex half" style="height:100%">
-    <div class="bg order-1 order-md-2" style="background-image: url('assets/images/sellerdelivery.jpg');margin-top:0% ;width:55%;"></div>
+    <div class="bg order-1 order-md-2" style="background-image: url('assets/images/gro.jpg');margin-top:-10% ;width:55%;"></div>
     <div class="contents order-2 order-md-1">
       <div class="container">
         <div class="row align-items-center" style= "margin-left:10% ;margin-top:7%;">
           <div class="col-md-7">
+            <br><br><br>
             <h3>Register</h3>
-            <p class="mb-4" style="color:black">Enter User details to register</p>
+             <p class="mb-4" style="color:black">Enter User details to register</p>
             <form action="validsignupform.php" method="POST">
               <div class="row">
                 <div class="col-md-6">
@@ -95,7 +99,7 @@
               <div class="row">
               <div class="col-md-6">
                   <div class="form-group first">
-                    <label for="pnumber">Phone Number</label>
+                    <label for="phoneno">Phone Number</label>
                     <input type="text" name="phone" class="form-control" placeholder="+00 0000000000" id="phoneno">
                   </div>    
                 </div>
