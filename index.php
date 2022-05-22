@@ -111,9 +111,17 @@
                 <div class="main-button">
                     <a href="option.php">Order now</a>
                 </div>
+<<<<<<< HEAD
+                <div class="input-group rounded">
+  <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+  <span class="input-group-text border-0" id="search-addon">
+    <i class="fas fa-search"></i>
+  </span>
+=======
                 <div style="margin-top:5rem;margin-left:2rem;">
                 <input type="text" placeholder="What do yo u need?">
                                 <button type="submit" class="site-btn" style="color:white;background-color:#ed563b;">SEARCH</button>
+>>>>>>> 36df68ac4bc7c4941f68c9e51c40c809654b416d
 </div>
                 
             </div>
