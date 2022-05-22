@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
@@ -18,7 +19,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="font-awesome.css">
 
-    <title> Customer Login</title>
+    <title>Seller Login #3</title>
     
   </head>
   <body>
@@ -37,14 +38,15 @@
                             <li><a href="" style="color:black;">Checkout</a></li>
                             
                             <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color:red;">Login</a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color:red";>Login</a>
                                 <div class="dropdown-menu">
                                 <a class="dropdown-item" href="adminlogin.php" style="color:black;">Admin Login</a>
-                                    <a class="dropdown-item" href="sellerlogin.php" style="color:black;">Seller Login</a>
+                                    <a class="dropdown-item" href="loginform.php" style="color:black;">Customer Login</a>
                                     
                                 </div>
                               <li><a href="" style="color:black">About Us</a></li>
-                  
+
+                            
                             <li><a href="" style="color:black;">Contact</a></li> 
                         </ul>        
                         <a class='menu-trigger'>
@@ -57,11 +59,6 @@
         </div>
     </header>
     
-    
-    
-    
-  
-
   <div class="d-lg-flex half" style="height:100%">
     <div class="bg order-1 order-md-2" style="background-image: url('assets/images/gro.jpg');margin-top:-15% ;"></div>
     <div class="contents order-2 order-md-1">
@@ -90,7 +87,7 @@
               </div>
 
               <input type="submit" value="Log In" class="btn btn-block">
-              <p><a href="signupform.php">New User? Register here</a></p>
+              <p><a href="sellerregistration.php">New User? Register here</a></p>
 
             </form>
           </div>
@@ -103,22 +100,22 @@
     
     
 
-    <!-- jQuery -->
-    <script src="assets/js/jquery-2.1.0.min.js"></script>
+      <!-- jQuery -->
+      <script src="assets/js/jquery-2.1.0.min.js"></script>
 
-    <!-- Bootstrap -->
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+<!-- Bootstrap -->
+<script src="assets/js/popper.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
 
-    <!-- Plugins -->
-    <script src="assets/js/scrollreveal.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/imgfix.min.js"></script> 
-    <script src="assets/js/mixitup.js"></script> 
-    <script src="assets/js/accordions.js"></script>
-    
-    <!-- Global Init -->
-    <script src="assets/js/custom.js"></script>
+<!-- Plugins -->
+<script src="assets/js/scrollreveal.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/js/imgfix.min.js"></script> 
+<script src="assets/js/mixitup.js"></script> 
+<script src="assets/js/accordions.js"></script>
+
+<!-- Global Init -->
+<script src="assets/js/custom.js"></script>
   </body>
 </html>

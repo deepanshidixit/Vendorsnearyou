@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="font-awesome.css">
 
-    <title> Customer Login</title>
+    <title>Admin Login</title>
     
   </head>
   <body>
@@ -38,13 +38,15 @@
                             
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color:red;">Login</a>
+                              
                                 <div class="dropdown-menu">
-                                <a class="dropdown-item" href="adminlogin.php" style="color:black;">Admin Login</a>
+                                    <a class="dropdown-item" href="loginform.php" style="color:black;">Customer Login</a>
                                     <a class="dropdown-item" href="sellerlogin.php" style="color:black;">Seller Login</a>
                                     
                                 </div>
                               <li><a href="" style="color:black">About Us</a></li>
-                  
+
+                            
                             <li><a href="" style="color:black;">Contact</a></li> 
                         </ul>        
                         <a class='menu-trigger'>
@@ -89,8 +91,7 @@
                 <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span> 
               </div>
 
-              <input type="submit" value="Log In" class="btn btn-block">
-              <p><a href="signupform.php">New User? Register here</a></p>
+             
 
             </form>
           </div>
@@ -102,23 +103,22 @@
   </div>
     
     
+<!-- jQuery -->
+<script src="assets/js/jquery-2.1.0.min.js"></script>
 
-    <!-- jQuery -->
-    <script src="assets/js/jquery-2.1.0.min.js"></script>
+<!-- Bootstrap -->
+<script src="assets/js/popper.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
 
-    <!-- Bootstrap -->
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+<!-- Plugins -->
+<script src="assets/js/scrollreveal.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/js/imgfix.min.js"></script> 
+<script src="assets/js/mixitup.js"></script> 
+<script src="assets/js/accordions.js"></script>
 
-    <!-- Plugins -->
-    <script src="assets/js/scrollreveal.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/imgfix.min.js"></script> 
-    <script src="assets/js/mixitup.js"></script> 
-    <script src="assets/js/accordions.js"></script>
-    
-    <!-- Global Init -->
-    <script src="assets/js/custom.js"></script>
+<!-- Global Init -->
+<script src="assets/js/custom.js"></script>
   </body>
 </html>
