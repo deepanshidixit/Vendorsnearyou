@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="font-awesome.css">
 
-    <title>Sign Up #3</title>
+    <title>Seller Sign Up</title>
   </head>
   <body>
   <header class="header-area header-sticky" style="height: 6.5rem ;">
@@ -182,7 +182,7 @@
               </div>
               </div>
               <input type="submit" value="Register" class="btn px-5">
-              <p><a href="sellerform.php">Already registered? Back to Login</a></p>
+              <p><a href="sellerlogin.php">Already registered? Back to Login</a></p>
               
 
             </form>
