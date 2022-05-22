@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="font-awesome.css">
 
-    <title>Login #2</title>
+    <title> Customer Login</title>
     
   </head>
   <body>
@@ -38,33 +38,13 @@
                             
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color:red;">Login</a>
-                              
                                 <div class="dropdown-menu">
-                                    
-                                    <a class="dropdown-item" href="" style="color:black;">Seller Login</a>
+                                <a class="dropdown-item" href="adminlogin.php" style="color:black;">Admin Login</a>
+                                    <a class="dropdown-item" href="sellerlogin.php" style="color:black;">Seller Login</a>
                                     
                                 </div>
                               <li><a href="" style="color:black">About Us</a></li>
-
-
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Login</a>
-                              
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="loginform.php">Customer Login</a>
-                                    <a class="dropdown-item" href="">Seller Login</a>
-                                    
-                                </div>
-                            
-
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
-                              
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="about.php" style="color:black">About Us</a>
-                                    
-                                </div>
-                            </li>
-
+                  
                             <li><a href="" style="color:black;">Contact</a></li> 
                         </ul>        
                         <a class='menu-trigger'>
@@ -123,9 +103,22 @@
     
     
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script> 
+    <script src="assets/js/mixitup.js"></script> 
+    <script src="assets/js/accordions.js"></script>
+    
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
   </body>
 </html>

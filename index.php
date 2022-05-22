@@ -48,17 +48,7 @@
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav" style="padding-top:1.3rem;">
                             <li><a href="index.php" class="active">Home</a></li>
-                            <li><a href="">Products</a></li>
-                            <li><a href="">Checkout</a></li>
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Login</a>
-                              
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="loginform.php">Customer Login</a>
-                                    <a class="dropdown-item" href="">Seller Login</a>
-                                    
-                                </div>
-                            
+                            <li><a href="">Products</a></li>            
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
                                 <div class="dropdown-menu">
@@ -86,10 +76,8 @@
                               
                                 <div class="dropdown-menu">
                                 <a class="dropdown-item" href="adminlogin.php">Admin Login</a>
-                                    
                                     <a class="dropdown-item" href="loginform.php">Customer Login</a>
-                                    <a class="dropdown-item" href="">Seller Login</a>
-                                    
+                                    <a class="dropdown-item" href="sellerlogin.php">Seller Login</a>
                                 </div>
                             <li><a href="">About Us</a></li>
                             
