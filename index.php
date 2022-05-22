@@ -80,8 +80,6 @@
                                     <a class="dropdown-item" href="sellerlogin.php">Seller Login</a>
                                 </div>
                             <li><a href="">About Us</a></li>
-                            
-
                         
                             <li><a href="">Contact</a></li> 
                         </ul>        

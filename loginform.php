@@ -58,9 +58,6 @@
     </header>
     
     
-    
-    
-  
 
   <div class="d-lg-flex half" style="height:100%">
     <div class="bg order-1 order-md-2" style="background-image: url('assets/images/gro.jpg');margin-top:-15% ;"></div>
