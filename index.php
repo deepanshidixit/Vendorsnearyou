@@ -109,21 +109,16 @@
                 <div class="main-button">
                     <a href="option.php">Order now</a>
                 </div>
-
-                <div class="input-group rounded">
-  <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-  <span class="input-group-text border-0" id="search-addon">
-    <i class="fas fa-search"></i>
-  </span>
+      
 
                 <div style="margin-top:5rem;margin-left:2rem;">
                 <input type="text" placeholder="What do yo u need?">
-                                <button type="submit" class="site-btn" style="color:white;background-color:#ed563b;">SEARCH</button>
+                <button type="submit" class="site-btn" style="color:white;background-color:#ed563b;">SEARCH</button>
 
-</div>
                 
             </div>
         </div>
+    </div>
     </div>
     <!-- ***** Main Banner Area End ***** -->
     
@@ -139,6 +134,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col-lg-4">
                     <div class="trainer-item">
@@ -153,7 +149,8 @@
                             </ul>
                         </div>
                     </div>
-                </div>
+            </div>
+        
                 <div class="col-lg-4">
                     <div class="trainer-item">
                         <div class="image-thumb">
