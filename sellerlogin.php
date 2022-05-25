@@ -68,7 +68,7 @@
           <div class="col-md-7" style="margin-top:20%;">
             <h3>Login</h3>
             <p class="mb-4">Enter Your Username and Password</p>
-            <form action="loginvalid.php" method="post">
+            <form action="seller/sellervalidlogin.php" method="POST">
               <div class="form-group first">
                 <label for="username">Username</label>
                 <input type="text" class="form-control" name="username" placeholder="your-email@gmail.com" id="username">
@@ -87,7 +87,7 @@
               </div>
 
               <input type="submit" value="Log In" class="btn btn-block">
-              <p><a href="sellerregistration.php">New User? Register here</a></p>
+              <p><a href="sellerregistration.php">New Seller? Register here</a></p>
 
             </form>
           </div>

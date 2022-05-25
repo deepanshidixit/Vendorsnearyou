@@ -63,7 +63,7 @@
             <br><br><br>
             <h3>Register</h3>
              <p class="mb-4" style="color:black">Enter User details to register</p>
-            <form action="validsignupform.php" method="POST">
+            <form action="validsellerregister.php" method="POST">
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group first">

@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -48,22 +51,12 @@
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav" style="padding-top:1.3rem;">
                             <li><a href="index.php" class="active">Home</a></li>
-                            <li><a href="">Products</a></li>            
+                                     
                             <li class="dropdown">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
+                              
                                 <div class="dropdown-menu">
                                 <a class="dropdown-item" href="adminlogin.php">Groceries</a>
-                                <ul class="submenu dropdown-menu">
-			<li><a class="nav-link" href="#">Submenu item 1 </a></li>
-		    <li><a class="nav-link" href="#">Submenu item 2 </a></li>
-		    <li><a class="nav-link" href="#">Submenu item 3 <b class="float-end">&raquo;</b> </a>
-		    	<ul class="submenu dropdown-menu">
-				    <li><a class="nav-link" href="#">Multi level 1</a></li>
-				    <li><a class="nav-link" href="#">Multi level 2</a></li>
-				    <li><a class="nav-link" href="#">Multi level 3</a></li>
-				</ul>
-		    </li>
-		</ul>
                                 
                                     
                                     <a class="dropdown-item" href="loginform.php">Fruits and Vegetables</a>
@@ -71,17 +64,41 @@
                                     
                                 </div>
                             <li><a href="">Checkout</a></li>
-                            <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Login</a>
-                              
-                                <div class="dropdown-menu">
-                                <a class="dropdown-item" href="adminlogin.php">Admin Login</a>
-                                    <a class="dropdown-item" href="loginform.php">Customer Login</a>
-                                    <a class="dropdown-item" href="sellerlogin.php">Seller Login</a>
-                                </div>
+                            
+                            
+                            
+                    
                             <li><a href="">About Us</a></li>
                         
                             <li><a href="">Contact</a></li> 
+                            <?php
+                              if(isset($_SESSION["clog"]))
+                              {
+                                  $logornot=$_SESSION["clog"];
+                                   if($logornot=="yes")
+                                   {
+                                       echo "<li><a class=' py-sm-0 px-sm-3' href='logoutindex.php'>Logout</a></li>";
+                                   }
+                                } 
+                                else
+                                {
+                                    echo "
+                                    <li class='dropdown'>
+                                    <a class='dropdown-toggle' data-toggle='dropdown' href='#' role='button' aria-haspopup='true' aria-expanded='false'>Login</a>
+                                  
+                                    <div class='dropdown-menu'>
+                                    <a class='dropdown-item' href='adminlogin.php'>Admin Login</a>
+                                        <a class='dropdown-item' href='loginform.php'>Customer Login</a>
+                                        <a class='dropdown-item' href='sellerlogin.php'>Seller Login</a>
+                                    </div>
+                                </li>
+                                    
+                                    
+                                    
+                                    ";
+                                }
+                              
+                            ?>
                         </ul>        
                         <a class='menu-trigger'>
                             <span>Menu</span>
@@ -109,17 +126,19 @@
                 <div class="main-button">
                     <a href="option.php">Order now</a>
                 </div>
-      
+
+                
 
                 <div style="margin-top:5rem;margin-left:2rem;">
                 <input type="text" placeholder="What do yo u need?">
-                <button type="submit" class="site-btn" style="color:white;background-color:#ed563b;">SEARCH</button>
+                                <button type="submit" class="site-btn" style="color:white;background-color:#ed563b;">SEARCH</button>
 
+</div>
                 
             </div>
         </div>
     </div>
-    </div>
+</div>
     <!-- ***** Main Banner Area End ***** -->
     
 
@@ -134,7 +153,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="row">
                 <div class="col-lg-4">
                     <div class="trainer-item">
@@ -149,8 +167,7 @@
                             </ul>
                         </div>
                     </div>
-            </div>
-        
+                </div>
                 <div class="col-lg-4">
                     <div class="trainer-item">
                         <div class="image-thumb">
