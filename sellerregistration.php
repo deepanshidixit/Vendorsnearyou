@@ -53,9 +53,9 @@
             </div>
         </div>
     </header>
-
-    <div class="d-lg-flex half" style="height:100%">
-    <div class="bg order-1 order-md-2" style="background-image: url('assets/images/gro.jpg');margin-top:-10% ;width:55%;"></div>
+<div>
+    <div class="d-lg-flex half" >
+    <div class="bg order-1 order-md-2" style="background-image: url('assets/images/seller.jpg');width:50%;"></div>
     <div class="contents order-2 order-md-1">
       <div class="container">
         <div class="row align-items-center" style= "margin-left:10% ;margin-top:7%;">
@@ -115,8 +115,17 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group first">
-                    <label for="Shopno">Shop No.</label>
-                    <input type="text" name="shopno" class="form-control" placeholder="" id="shopno">
+                    
+                    <label for="Shopcategory">Shop Category</label>
+                   
+                    <select name="food" id="food" placeholder="Select category" class="form-control">
+  <option value="grocery">Grocery</option>
+  <option value="fruitsveggies">Fruits and vegetables</option>
+  <option value="dairyproducts">Dairy Products</option>
+
+</select>
+
+                   
                   </div>    
                 </div>
               
@@ -177,7 +186,7 @@
                 </div>
               </div>
               
-              <div class="d-flex mb-5 mt-4 align-items-center">
+              <div class="d-flex mb-5 mt-4 align-items-center" style="">
                 <div class="d-flex align-items-center">
                 <label class="control control--checkbox mb-0"><span class="caption">Creating an account means you're okay with our <a href="#">Terms and Conditions</a> and our <a href="#">Privacy Policy</a>.</span>
                   <input type="checkbox" checked="checked"/>

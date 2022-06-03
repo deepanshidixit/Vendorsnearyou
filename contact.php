@@ -1,3 +1,16 @@
+<?php
+session_start();
+$ch=curl_init();
+curl_setopt($ch,CURLOPT_URL,'http://ip-api.com/json');
+curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);
+$result=curl_exec($ch);
+$result=json_decode($result);
+if($result->status=='success')
+ {  $citydisplay = $result->city;
+    $regiondisplay=$result->regionName;
+  
+ }
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,30 +49,84 @@
     
     
     <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky">
+    <header class="header-area header-sticky" style="height:6.5rem";>
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
-                        <a href="index.php" class="logo"><img src ="assets/images/logonew.svg" style="height:9rem; width:9rem; margin-top:-1.5rem; margin-left:-5.2rem;"><span style="padding-left:-2rem;font-size:2rem">Gro-Fresh</span></a>
+                        
+                        <a href="index.php" class="logo"><img src ="assets/images/logonew.svg" style="height:9rem; width:9rem; margin-top:-1.5rem; margin-left:-5.2rem;"><span style="padding-left:-2rem;font-size:2rem">Gro-Fresh</span><em> </em></a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
-                        <ul class="nav">
-                            <li><a href="index.php">Home</a></li>
-                            <li><a href="products.html">Products</a></li>
-                            <li><a href="checkout.php">Checkout</a></li>
+                        <ul class="nav" style="padding-top:1.3rem;">
+                            <li><a href="index.php" class="active">Home</a></li>
+                                     
                             <li class="dropdown">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
                               
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="about.html">About Us</a>
-                                    <a class="dropdown-item" href="blog.html">Blog</a>
-                                    <a class="dropdown-item" href="testimonials.html">Testimonials</a>
-                                    <a class="dropdown-item" href="terms.html">Terms</a>
+                                <a class="dropdown-item" href="adminlogin.php">Groceries</a>
+                                
+                                    
+                                    <a class="dropdown-item" href="loginform.php">Fruits and Vegetables</a>
+                                    <a class="dropdown-item" href="">Dairy Products</a>
+                                    
                                 </div>
-                            </li>
-                            <li><a href="contact.html" class="active">Contact</a></li> 
+                            <li><a href="">Checkout</a></li>
+                            
+                            
+                            
+                    
+                            <li><a href="">About Us</a></li>
+                        
+                            <li><a href="">Contact</a></li> 
+                            <?php
+                              if(isset($_SESSION["clog"]))
+                              {
+                                  $logornot=$_SESSION["clog"];
+                                   if($logornot=="yes")
+                                   {
+                                       echo "<li><a class=' py-sm-0 px-sm-3' href='logoutindex.php'>Logout</a></li>";
+                                   }
+                                } 
+                                else
+                                {
+                                    echo "
+                                    <li class='dropdown'>
+                                    <a class='dropdown-toggle' data-toggle='dropdown' href='#' role='button' aria-haspopup='true' aria-expanded='false'>Login</a>
+                                  
+                                    <div class='dropdown-menu'>
+                                    <a class='dropdown-item' href='adminlogin.php'>Admin Login</a>
+                                        <a class='dropdown-item' href='loginform.php'>Customer Login</a>
+                                        <a class='dropdown-item' href='sellerlogin.php'>Seller Login</a>
+                                    </div>
+                                </li>
+                            
+                               <li class='dropdown'>
+                               <a class='dropdown-toggle' data-toggle='dropdown' href='#' role='button' aria-haspopup='true' aria-expanded='false'>$citydisplay</a>
+
+
+
+                                <div class='dropdown-menu'>
+                                <form class='dropdown-item'>
+                                   <select name='cityname'>
+                                   <option value=''>Vellore</option>
+                                   <option value=''>Bengaluru</option>
+                                   <option value=''>Chennai</option>
+                                   </select>
+                                   <br><br>
+                                   <input type='text' placeholder='apartment no and locality'>
+                                 </form>  
+                                                                        
+                                </div>
+                                    
+                                    
+                                   </li> 
+                                    ";
+                                }
+                              
+                            ?>
                         </ul>        
                         <a class='menu-trigger'>
                             <span>Menu</span>
@@ -70,6 +137,11 @@
             </div>
         </div>
     </header>
+    <!-- ***** Header Area End ***** -->
+    
+
+
+    
     <!-- ***** Header Area End ***** -->
 
     <section class="section section-bg" id="call-to-action" style="background-image: url(assets/images/banner-image-1-1920x500.jpg)">
@@ -113,7 +185,7 @@
                         <i class="fa fa-envelope"></i>
                     </div>
 
-                    <h5><a href="#">contact@company.com</a></h5>
+                    <h5><a href="#">contact@gro-fresh.com</a></h5>
 
                     <br>
                 </div>
@@ -122,8 +194,9 @@
                     <div class="icon">
                         <i class="fa fa-map-marker"></i>
                     </div>
-
-                    <h5>212 Barrington Court New York</h5>
+<?php
+                    echo "<a href='#'><h5>$citydisplay</a></h5>";
+                    ?>
 
                     <br>
                 </div>
@@ -136,15 +209,11 @@
     <section class="section" id="contact-us" style="margin-top: 0">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-xs-12">
-                    <div id="map">
-                      <iframe src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="600px" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-xs-12">
+              
+                <div class="col-lg-12 col-md-12 col-xs-12">
                     <div class="contact-form section-bg" style="background-image: url(assets/images/contact-1-720x480.jpg)">
-                        <form id="contact" action="" method="post">
-                          <div class="row">
+                        <form id="contact" action="" method="post" style="">
+                          <div class="row" style="">
                             <div class="col-md-6 col-sm-12">
                               <fieldset>
                                 <input name="name" type="text" id="name" placeholder="Your Name*" required="">
@@ -185,8 +254,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <p>
-                        Copyright © 2020 Contact
-                        - Template by: <a href="https://www.phpjabbers.com/"></a>
+                        Copyright © 2022 Gro-Fresh
+                         
                     </p>
                 </div>
             </div>

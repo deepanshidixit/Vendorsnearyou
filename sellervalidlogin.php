@@ -16,15 +16,13 @@
                 $_SESSION["log"]="yes";
                 header("location:seller/sellerhome.php");
             }
-            else{
+            else
+            {
               header("location:sellerlogin.php");
 
             }
         }
-        else
-        {
-          header("location:sellerlogin.php");
-        }
+        
       }
 
 ?>

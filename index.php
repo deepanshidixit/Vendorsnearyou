@@ -1,5 +1,15 @@
 <?php
 session_start();
+$ch=curl_init();
+curl_setopt($ch,CURLOPT_URL,'http://ip-api.com/json');
+curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);
+$result=curl_exec($ch);
+$result=json_decode($result);
+if($result->status=='success')
+ {  $citydisplay = $result->city;
+    $regiondisplay=$result->regionName;
+  
+ }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -70,7 +80,7 @@ session_start();
                     
                             <li><a href="">About Us</a></li>
                         
-                            <li><a href="">Contact</a></li> 
+                            <li><a href="contact.php">Contact</a></li> 
                             <?php
                               if(isset($_SESSION["clog"]))
                               {
@@ -92,9 +102,27 @@ session_start();
                                         <a class='dropdown-item' href='sellerlogin.php'>Seller Login</a>
                                     </div>
                                 </li>
+                            
+                               <li class='dropdown'>
+                               <a class='dropdown-toggle' data-toggle='dropdown' href='#' role='button' aria-haspopup='true' aria-expanded='false'>$citydisplay</a>
+
+
+
+                                <div class='dropdown-menu'>
+                                <form class='dropdown-item'>
+                                   <select name='cityname'>
+                                   <option value=''>Vellore</option>
+                                   <option value=''>Bengaluru</option>
+                                   <option value=''>Chennai</option>
+                                   </select>
+                                   <br><br>
+                                   <input type='text' placeholder='apartment no and locality'>
+                                 </form>  
+                                                                        
+                                </div>
                                     
                                     
-                                    
+                                   </li> 
                                     ";
                                 }
                               
@@ -239,6 +267,7 @@ session_start();
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
                     <div class="cta-content">
+                        
                         <h2>Send us a <em>message</em></h2>
                         <div class="main-button">
                             <a href="contact.html">Contact us</a>

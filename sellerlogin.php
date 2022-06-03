@@ -60,7 +60,7 @@
     </header>
     
   <div class="d-lg-flex half" style="height:100%">
-    <div class="bg order-1 order-md-2" style="background-image: url('assets/images/gro.jpg');margin-top:-15% ;"></div>
+    <div class="bg order-1 order-md-2" style="background-image: url('assets/images/seller.jpg');margin-top:% ;"></div>
     <div class="contents order-2 order-md-1">
 
       <div class="container" >
@@ -68,7 +68,7 @@
           <div class="col-md-7" style="margin-top:20%;">
             <h3>Login</h3>
             <p class="mb-4">Enter Your Username and Password</p>
-            <form action="seller/sellervalidlogin.php" method="POST">
+            <form action="sellervalidlogin.php" method="POST">
               <div class="form-group first">
                 <label for="username">Username</label>
                 <input type="text" class="form-control" name="username" placeholder="your-email@gmail.com" id="username">
